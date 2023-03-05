@@ -405,6 +405,7 @@ ul.row {
     background-color: var(--color-white);
     height: 0.2rem;
     width: 0;
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .nav .nav-item:hover .nav-link::before {
