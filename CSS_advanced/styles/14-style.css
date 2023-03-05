@@ -16,14 +16,14 @@
     --font-weight-bold: 700;
     --line-height-small: 1.2;
     --line-height-base: 1.5;
-    --line-height-base: 1.8;
+    --line-height-big: 1.8;
     --section-header-align: center;
     --section-tagline-transform: uppercase;
-    --section-title-color: var(--color-black);
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
 }
 
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%
@@ -204,7 +204,27 @@ template {
     display: none
 }
 
-h1, h2, h3, h4, h5, h6 {
+/*# sourceMappingURL=normalize.min.css.map */
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
 }
@@ -214,16 +234,16 @@ a:link {
     text-decoration: none;
 }
 
-a:active {
-    background: var(--color-light-grey);
-}
-
 a:visited {
     font-style: italic;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+a:active {
+    background: var(--color-light-grey);
 }
 
 .visually-hidden {
@@ -236,17 +256,17 @@ a:hover {
 
 .section-tagline {
     color: var(--color-primary);
-    font-weight: var(--font-weight-bold);
     font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
 }
 
 .section-title {
-    font-weight: var(--font-weight-bold);
-    color: var(--section-title-color);
     font-family: var(--font-family-title);
     font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
     margin: var(--section-title-margin);
+    color: var(--section-title-color)
 }
 
 .section-header {
